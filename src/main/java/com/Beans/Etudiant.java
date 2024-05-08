@@ -1,4 +1,4 @@
-package Beans;
+package com.Beans;
 
 public class Etudiant {
     public Integer getId() {

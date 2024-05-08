@@ -11,14 +11,16 @@
 
 
     <mvc:annotation-driven/>
-
-
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    <bean id="etudiantsDAO" class="com.DAO.EtudiantsDAO" abstract="true"/>
 
 
-    <context:component-scan base-package="com.servlets"/>
+
+
+
+    <context:component-scan base-package="com"/>
 
 </beans>

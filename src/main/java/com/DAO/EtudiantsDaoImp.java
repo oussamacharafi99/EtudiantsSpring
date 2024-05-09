@@ -36,8 +36,9 @@ public class EtudiantsDaoImp implements EtudiantsDAO{
             if (etudiant.getId() == id) {
                 etudiant.setNom(updatedEtudiant.getNom());
                 etudiant.setEmail(updatedEtudiant.getEmail());
-                etudiant.setMessage(updatedEtudiant.getMessage());
-                break; // Once updated, exit loop
+                etudiant.setAddress(updatedEtudiant.getAddress());
+                etudiant.setTelephone(updatedEtudiant.getAddress());
+                break;
             }
         }
     }

@@ -14,9 +14,12 @@ public class EtudiantController {
     @Autowired
     private EtudiantsDAO etudiantsDAO;
 
-
-
     @RequestMapping (value = "/" )
+    public String showHome(Model model) {
+        return "home";
+    }
+
+    @RequestMapping (value = "/add" )
     public String showEtudiantForm(Model model) {
         model.addAttribute("Etudiant", new Etudiant());
         return "Etudiant";

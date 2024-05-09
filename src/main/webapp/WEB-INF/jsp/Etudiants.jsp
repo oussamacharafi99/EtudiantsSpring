@@ -24,7 +24,8 @@
             <td>${etudiant.id}</td>
             <td>${etudiant.nom}</td>
             <td>${etudiant.email}</td>
-            <td>${etudiant.message}</td>
+            <td>${etudiant.address}</td>
+            <td>${etudiant.telephone}</td>
             <td>
                 <a href="deleteEtudiant/${etudiant.id}">Supprimer</a>
             </td>

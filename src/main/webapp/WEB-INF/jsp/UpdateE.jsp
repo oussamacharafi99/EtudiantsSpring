@@ -13,8 +13,10 @@
     <input type="text" name="nom"  value="${etudiant.getNom()}" required><br>
     <label>Email:</label>
     <input type="email" name="email"  value="${etudiant.getEmail()}" required><br>
-    <label>Message:</label>
-    <input  type="text" name="message"  value="${etudiant.getMessage()}" required><br>
+    <label>Address:</label>
+    <input type="text" name="address" value="${etudiant.getAddress()}" required><br>
+    <label>Telephone:</label>
+    <input type="number" name="telephone" value="${etudiant.getTelephone()}" required><br>
     <button type="submit">Envoyer</button>
 </form>
 </body>

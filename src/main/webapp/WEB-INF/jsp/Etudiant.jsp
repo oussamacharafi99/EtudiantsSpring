@@ -13,8 +13,10 @@
     <input type="text" name="nom" required><br>
     <label>Email:</label>
     <input type="email" name="email" required><br>
-    <label>Message:</label>
-    <textarea name="message" required></textarea><br>
+    <label>Address:</label>
+    <input type="text" name="address" required><br>
+    <label>Telephone:</label>
+    <input type="number" name="telephone" required><br>
     <button type="submit">Envoyer</button>
 </form>
 </body>

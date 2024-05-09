@@ -2,7 +2,6 @@ package com.Beans;
 
 public class Etudiant {
 
-
     private Integer id;
     private String nom;
     private String email;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="EtudiantsSpring:war exploded" />
+      <artifact name="untitled:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -11,6 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c27db9b3-6f92-409c-8112-d3170ae517a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Beans/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Beans/Etudiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/EtudiantsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/EtudiantsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/EtudiantsDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/EtudiantsDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlets/EtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlets/EtudiantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Etudiants.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Etudiants.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/UpdateE.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/UpdateE.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,16 +82,15 @@
     <configuration name="Tomcat 8.5.99" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.99" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="EtudiantsSpring:war exploded">
+        <artifact name="untitled:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/EtudiantsSpring_war_exploded" />
+            <option name="CONTEXT_PATH" value="/untitled_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="cfd8abd0-95fa-4487-a169-8b0b7ae6cf1d" />
-        <option name="HTTP_PORT" value="8085" />
-        <option name="JNDI_PORT" value="1098" />
+        <option name="BASE_DIRECTORY_NAME" value="876f3736-d2dc-4fdf-8ac5-398a67839736" />
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -93,7 +98,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60932" />
+        <option name="DEBUG_PORT" value="62314" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -158,10 +163,18 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="EtudiantsSpring:war exploded" />
+          <artifact name="untitled:war exploded" />
         </option>
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,6 +189,7 @@
       <workItem from="1715113071672" duration="944000" />
       <workItem from="1715114671408" duration="14000" />
       <workItem from="1715157610032" duration="1418000" />
+      <workItem from="1715184656659" duration="11810000" />
     </task>
     <servers />
   </component>

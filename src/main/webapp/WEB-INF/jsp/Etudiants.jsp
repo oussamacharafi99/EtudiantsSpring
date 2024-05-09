@@ -6,6 +6,11 @@
 </head>
 <body>
 <h2>Liste des Etudiants</h2>
+
+<form action="searchByName" method="GET">
+    <input type="text" name="search"/>
+    <button type="submit">Search</button>
+</form>
 <table>
     <tr>
         <th>ID</th>
@@ -22,6 +27,9 @@
             <td>${etudiant.message}</td>
             <td>
                 <a href="deleteEtudiant/${etudiant.id}">Supprimer</a>
+            </td>
+            <td>
+                <a href="updateEtudiant/${etudiant.id}">update</a>
             </td>
         </tr>
     </c:forEach>

@@ -6,26 +6,16 @@
 </head>
 <body>
 <h2>Etudiant Form</h2>
-
-<form action="saveNewEtudiant" method="post">
-
-
+<form action="${pageContext.request.contextPath}/updateEtudiant" method="post">
+    <label>Matricule:</label>
+    <input type="number" name="id" value="${etudiant.getId()}" required><br>
     <label>Nom:</label>
-    <input type="text" name="nom" value="${etudiant.getNom()}" required><br>
-
-
-    <label>Numero:</label>
-    <input type="Number" name="numero" value="${etudiant.getNumero()}" required><br>
-
-
-    <label>matricule:</label>
-    <input type="text" name="matricule" value="${etudiant.getMatricule()}" required><br>
-
+    <input type="text" name="nom"  value="${etudiant.getNom()}" required><br>
     <label>Email:</label>
-    <input type="email" name="email" value="${etudiant.getEmail()}" required><br>
-
+    <input type="email" name="email"  value="${etudiant.getEmail()}" required><br>
+    <label>Message:</label>
+    <input  type="text" name="message"  value="${etudiant.getMessage()}" required><br>
     <button type="submit">Envoyer</button>
 </form>
-
 </body>
 </html>

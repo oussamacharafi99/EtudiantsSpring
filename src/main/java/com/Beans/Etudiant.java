@@ -1,20 +1,21 @@
 package com.Beans;
 
 public class Etudiant {
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer matricule) {
-        this.id = matricule;
-    }
 
     private Integer id;
     private String nom;
     private String email;
     private String message;
 
-    // Getters and Setters
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public String getNom() {
         return nom;
     }

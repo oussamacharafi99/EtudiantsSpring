@@ -8,5 +8,8 @@ public interface EtudiantsDAO {
     public List<Etudiant> afficherEtudiants();
     public void ajouterEtudiants(Etudiant etudiant);
     public void supprimerEtudiants(Integer id);
-    public void updateEtudiants();
+    public void updateEtudiant(Integer id, Etudiant updatedEtudiant);
+    public Etudiant getEtudiantById(Integer id);
+    public List<Etudiant> SearchEtudiant(String name);
+
 }

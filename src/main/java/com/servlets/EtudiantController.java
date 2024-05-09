@@ -2,11 +2,10 @@ package com.servlets;
 import com.Beans.Etudiant;
 import com.DAO.EtudiantsDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 
 @Controller
@@ -15,13 +14,15 @@ public class EtudiantController {
     @Autowired
     private EtudiantsDAO etudiantsDAO;
 
-    @RequestMapping (value = "/" ,method = RequestMethod.GET)
+
+
+    @RequestMapping (value = "/" )
     public String showEtudiantForm(Model model) {
         model.addAttribute("Etudiant", new Etudiant());
         return "Etudiant";
     }
 
-    @RequestMapping(value = "/saveEtudiant",method = RequestMethod.POST)
+    @RequestMapping(value = "/saveEtudiant")
     public String saveEtudiant(Etudiant etudiant) {
         etudiantsDAO.ajouterEtudiants(etudiant);
         //etudiants.add(etudiant);
@@ -34,9 +35,31 @@ public class EtudiantController {
         return "Etudiants";
     }
 
-    @RequestMapping(value = "/deleteEtudiant/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/deleteEtudiant/{id}")
     public String deleteEtudiant(@PathVariable("id") Integer id) {
         etudiantsDAO.supprimerEtudiants(id);
         return "redirect:/etudiants";
     }
+
+
+    @RequestMapping(value = "/updateEtudiant/{id}")
+    public String showUpdateForm(@PathVariable("id") Integer id, Model model) {
+        Etudiant etudiant = etudiantsDAO.getEtudiantById(id);
+        model.addAttribute("etudiant", etudiant);
+        return "UpdateE";
+    }
+
+    @RequestMapping(value = "/updateEtudiant")
+    public String getEtudiantById( Integer id, Etudiant etudiant) {
+        etudiantsDAO.updateEtudiant(id, etudiant);
+        return "redirect:/etudiants";
+    }
+
+    @GetMapping(value = "/searchByName")
+    public String searchE(@RequestParam("search") String nom, Model model ) {
+        model.addAttribute("Etudiants", etudiantsDAO.SearchEtudiant(nom) );
+        return "Etudiants";
+    }
+
+
 }

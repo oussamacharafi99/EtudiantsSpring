@@ -17,10 +17,6 @@
     </bean>
     <bean id="etudiantsDAO" class="com.DAO.EtudiantsDAO" abstract="true"/>
 
-
-
-
-
     <context:component-scan base-package="com"/>
 
 </beans>

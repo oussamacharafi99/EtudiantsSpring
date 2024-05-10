@@ -1,4 +1,6 @@
-package com.DAO;
+package com.Cenima.DAO;
+
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 

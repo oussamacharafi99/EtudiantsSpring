@@ -85,3 +85,6 @@ Critères de performance
 **Interface utilisateur conviviale et responsive.
 **L'utilisation du Spring Core et Spring MVC.
 **Respect des délais de livraison.
+
+© 2024 Oussama Charafi. All rights reserved.
+

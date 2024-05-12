@@ -11,6 +11,8 @@
     <title>Document</title>
 </head>
 <body>
+<a id="return" href="${pageContext.request.contextPath}"><img src="https://i.ibb.co/vcns5BS/6.png" width="100%"/></a>
+<a id="show" href="etudiants"><img src="https://i.ibb.co/9c632W2/7.png" width="100%"/></a>
 <div id="loader">
     <div class="loader-circle"></div>
 </div>
@@ -20,7 +22,7 @@
     </div>
 </header>
 <div class="main">
-    <h1 id="titre">Registration Page !</h1>
+    <h1 id="titre">Register !</h1>
     <form action="saveEtudiant" method="post">
         <div>
             <label style="display: none">Matricule:</label><br>

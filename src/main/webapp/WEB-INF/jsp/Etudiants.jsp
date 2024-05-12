@@ -9,6 +9,7 @@
     </style>
 </head>
 <body>
+<a id="return" href="${pageContext.request.contextPath}"><img src="https://i.ibb.co/vcns5BS/6.png" width="100%"/></a>
 <div id="loader">
     <div class="loader-circle"></div>
 </div>
@@ -39,6 +40,10 @@
             <div class="email" id="email">
                 <p>${etudiant.email}</p>
             </div>
+            <div class="controls">
+                <a href="deleteEtudiant/${etudiant.id}"><i class="fa-solid fa-trash"></i></a>
+                <a href="updateEtudiant/${etudiant.id}"><i class="fa-solid fa-pen"></i></a>
+            </div>
         </div>
 </c:forEach>
     </div>
@@ -68,6 +73,8 @@
     document.querySelectorAll(".card").forEach((card) => {
         const email = card.querySelector(".email");
         const phone = card.querySelector(".phone");
+        const controls = card.querySelector(".controls");
+
         let check = true;
 
         card.addEventListener("mouseenter", () => {
@@ -76,6 +83,8 @@
                 phone.style.transform = "rotate(50deg) rotate(-25deg) translateY(40px) translateX(18px)";
                 email.style.transition = "0.6s";
                 email.style.transform = "rotate(90deg) rotate(-45deg) translateY(80px) translateX(30px)";
+                controls.style.transition = "0.6s";
+                controls.style.height = "60px"
                 check = false;
             }
         });
@@ -86,6 +95,8 @@
                 phone.style.transform = "rotate(0) rotate(0) translateY(0) translateX(0)";
                 email.style.transition = "0.6s";
                 email.style.transform = "rotate(0) rotate(0) translateY(0) translateX(0)";
+                controls.style.transition = "0.6s";
+                controls.style.height = "0px"
                 check = true;
             }
         });
@@ -94,13 +105,3 @@
 </script>
 </body>
 </html>
-
-
-<!--
-    <a href="deleteEtudiant/${etudiant.id}">Supprimer</a>
-    </td>
-    <td>
-    <a href="updateEtudiant/${etudiant.id}">update</a>
-    </td>
-    </tr>
--->

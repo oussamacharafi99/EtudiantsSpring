@@ -104,3 +104,19 @@ em , i{
 .main {
     display: none;
 }
+#show{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 100px;
+    animation: anime1 .6s ease-in-out infinite;
+    cursor: pointer;
+}
+@keyframes anime1  {
+    0% , 100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+}

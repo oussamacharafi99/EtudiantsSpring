@@ -137,3 +137,44 @@ p{
     font-size: 12px;
     font-weight: 700;
 }
+.controls{
+    width: 90px;
+    height: 0px;
+    overflow: auto;
+    overflow-y:hidden ;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 100px;
+}
+.controls > a > i{
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff8000;
+    transition: .5s;
+    border: 1px solid #ff8000;
+    padding:7px;
+    border-radius: 8px;
+}
+.controls > a > i:hover{
+    color: #fabe86;
+    border: 1px solid #fabe86;
+}
+#return{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 100px;
+    animation: anime .6s ease-in-out infinite;
+    cursor: pointer;
+}
+@keyframes anime  {
+    0% , 100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+}

@@ -23,7 +23,7 @@ header{
 .main{
     width: 100%;
     height: 620px;
-    background: url("https://d1tnmkmhr2jcsa.cloudfront.net/w22lzf%2Fpreview%2F57852902%2Fmain_large.png?response-content-disposition=inline%3Bfilename%3D%22main_large.png%22%3B&response-content-type=image%2Fpng&Expires=1715432918&Signature=aPAxUhUc8eBJzBzGXWk~bV~uWHcLGB4izK4YNdFPjMv~RpJPJlipGu-POV70tEXbxetK~3tWkL-RoGZAyXrry7ZVvC1CKqOPT-NdHt-mgos-81oEdOfERIVNUHOAopj2jsfqX5MnTddeOUNWyTZ7VfQ~M5pJQ1WKEAxZkW0lHJ8UNUSqFsvzC-3seIM0EwbiQn4bPxE36vGv1uh8avvSpwwXE7vyI9uxzaiGNgBVcXEaJuIoh6~J9Ra8aOOajpl3HifpWZcr9hluxLCe5rl3TCQ6105qwJHETS3USAYbzKK39rCQjYdVDx4VFloDH4ZlYS07V-aEbOF8JflrFsv~4w__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ") no-repeat top right/cover;
+    background: url("https://i.ibb.co/4szZqT2/bg.png") no-repeat top right/cover;
     display: flex;
     align-items: center;
     justify-content: space-between;

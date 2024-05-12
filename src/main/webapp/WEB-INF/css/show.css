@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Lexend:wght@100..900&family=Magra:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #1B2025;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.img-header{
+    width: 150px;
+}
+#formSearch{
+    background: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ff8000;
+    border-radius: 7px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 30px auto;
+    position: fixed;
+    left: 50px;
+    top: 20px;
+    z-index: 1992;
+}
+#formSearch > input{
+    border: none;
+    background: transparent;
+    color: #ff8000;
+    font-weight: 800;
+    font-size: 15px;
+    outline: none;
+    padding: 8px;
+}
+#formSearch > input::placeholder{
+    color: rgba(255, 203, 152, 0.55);
+    font-weight: 800;
+    font-size: 15px;
+}
+#formSearch >button >  i{
+    color: #ff8000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+#formSearch >button >  i:hover{
+    color: #dad7d7;
+}
+#formSearch >button {
+    border: none;
+    background: transparent;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 50px;
+}
+.card{
+    position: relative;
+    width: 310px;
+    height: 140px;
+    cursor: pointer;
+}
+
+.name{
+    background: url("https://i.ibb.co/YD3xRH9/orange-brown-minimalist-school-logo-5.png") no-repeat ;
+    background-size:cover ;
+    width: 290px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+}
+.name > p{
+    position: absolute;
+    left: 120px;
+}
+.phone{
+    background: url("https://i.ibb.co/LYJt0ft/orange-brown-minimalist-school-logo.png") no-repeat ;
+    background-size:cover ;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 997;
+    /* transform: rotate(50deg) rotate(-25deg) translateY(40px) translateX(18px); */
+
+
+}
+.phone > p{
+    position: absolute;
+    left: 120px;
+}
+.email{
+    background: url("https://i.ibb.co/LYJt0ft/orange-brown-minimalist-school-logo.png") no-repeat ;
+    background-size:cover ;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 998;
+    /* transform: rotate(105deg) rotate(-55deg) translateY(80px) translateX(35px); */
+}
+.email > p{
+    position: absolute;
+    left: 100px;
+}
+p{
+    font-size: 12px;
+    font-weight: 700;
+}

@@ -9,6 +9,7 @@ body{
     width: 100%;
     height: 100vh;
     background: #1B2025;
+    position: relative;
 }
 header{
     width: 100%;
@@ -83,4 +84,36 @@ label{
     color: white;
     font-size: 30px;
     font-weight: 900;
+}
+#return{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    animation: anime .6s ease-in-out infinite;
+    cursor: pointer;
+}
+#show{
+     position: absolute;
+     top: 30px;
+     right: 30px;
+     width: 100px;
+     animation: anime1 .6s ease-in-out infinite;
+     cursor: pointer;
+ }
+@keyframes anime  {
+    0% , 100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+}
+@keyframes anime1  {
+    0% , 100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
 }
